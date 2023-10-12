@@ -7,7 +7,7 @@ public class EmpatSatu {
     private static String tunai;
     private static boolean flag = true;
 
-    private static int saldo;
+    private static int saldo = 0;
 
     private static int limit = 25000000;
     public static void setorTunai(){
@@ -20,7 +20,7 @@ public class EmpatSatu {
             tunai = input.nextLine();
             if(Validation.isNumeric(tunai)){
                 int tunaiSetor = Integer.parseInt(tunai);
-                if(tunaiSetor < limit){
+                if(tunaiSetor <= limit){
                     System.out.println("Apakah anda yakin? y/n");
                     String pernyataan = input.nextLine();
                     if (pernyataan.equals("y")){
@@ -49,5 +49,9 @@ public class EmpatSatu {
 
     public static int getSaldo() {
         return saldo;
+    }
+
+    public static void setSaldo(int saldo) {
+        EmpatSatu.saldo = saldo;
     }
 }

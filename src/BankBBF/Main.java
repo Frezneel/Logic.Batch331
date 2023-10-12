@@ -9,11 +9,10 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
         System.out.println("Selamat datang di Bank BBF");
-        System.out.println("Terimakasih telah mendaftar");
+        System.out.println("Terimakasih telah mendaftar di Bank Kami");
         Satu.buatPIN();
         System.out.println("PIN Baru Anda Berhasil diDaftarkan");
         Dua.cekPIN();
 
     }
-
 }
