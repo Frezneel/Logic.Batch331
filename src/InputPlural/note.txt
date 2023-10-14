@@ -1,0 +1,42 @@
+Titip nomor 4 sementara
+                int hitung = 1;
+                int terbanyak = 0;
+                String tampilTerbanyak = "";
+                String modus = "";
+                int[] banyak = new int[panjang];
+                for (int i = 0; i < panjang; i++) {
+                    int angka1 = nilai[i];
+                    for (int j = 0; j < panjang; j++) {
+                        if (angka1 == nilai[j] && i != j){
+                            hitung++;
+                        }
+                    }
+                    banyak[i] = hitung;
+                    hitung = 1;
+                }
+                for (int i = 0; i < panjang; i++) {
+                    if (terbanyak < banyak[i]){
+                        terbanyak = banyak[i];
+                    }
+                }
+                for (int i = 0; i < panjang; i++) {
+                    if (banyak[i] >= terbanyak){
+                        tampilTerbanyak += nilai[i] + " ";
+                    }
+                }
+                int[] sering = Utility.ConvertStringToArrayInt(tampilTerbanyak);
+                int ambil = 0;
+                for (int i = 0; i <sering.length ; i++) {
+                    for (int j = 0; j < i; j++) {
+                        if (i == 0){
+                            ambil = sering[0];
+                            modus += sering[0] + " ";
+                        }
+                        if (sering[i] != sering[j] && i != 0){
+                            modus += sering[i] + " ";
+                        }
+                    }
+                }
+                System.out.println("Modus = " + modus);
+                flag = false;
+            }

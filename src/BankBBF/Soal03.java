@@ -3,7 +3,7 @@ package BankBBF;
 import java.util.Scanner;
 
 //MENU
-public class Tiga {
+public class Soal03 {
     private static boolean flag = true;
     private static Scanner input = new Scanner(System.in);
     private static String pilihan;
@@ -16,14 +16,14 @@ public class Tiga {
         System.out.println("3. Exit");
         System.out.print("Pilihan = ");
         pilihan = input.nextLine();
-        if (Validation.isNumeric(pilihan)) {
+        if (Utility.isNumeric(pilihan)) {
             switch (pilihan) {
                 case "1":
-                    EmpatSatu.setorTunai();
+                    Soal041.setorTunai();
                     flag = false;
                     break;
                 case "2":
-                    EmpatDua.transfer();
+                    Soal042.transfer();
                     flag = false;
                     break;
                 case "3":

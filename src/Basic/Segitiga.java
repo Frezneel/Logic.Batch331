@@ -1,4 +1,4 @@
-package Basic.BangunDatar;
+package Basic;
 
 import java.util.Scanner;
 

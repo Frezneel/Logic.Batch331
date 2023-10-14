@@ -1,7 +1,5 @@
 package DeretAngka;
 
-import BankBBF.Satu;
-
 import java.util.Scanner;
 
 public class Main {

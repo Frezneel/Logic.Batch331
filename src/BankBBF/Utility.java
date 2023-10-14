@@ -1,6 +1,6 @@
 package BankBBF;
 
-public class Validation {
+public class Utility {
     public static boolean isNumeric (String input){
         // Mengecek apakah PIN bernilai NULL
         if(input == null){

@@ -2,13 +2,13 @@ package BankBBF;
 
 import java.util.Scanner;
 
-public class EmpatDua {
+public class Soal042 {
     private static Scanner input = new Scanner(System.in);
     private static int saldo;
     private static boolean flag = true;
 
     public static void transfer(){
-        saldo = EmpatSatu.getSaldo();
+        saldo = Soal041.getSaldo();
         flag = true;
 
         while (flag){
@@ -18,7 +18,7 @@ public class EmpatDua {
             System.out.println("3. Kembali Ke-Menu");
             System.out.print("Pilihan : ");
             String pilihan = input.nextLine();
-            if (Validation.isNumeric(pilihan)){
+            if (Utility.isNumeric(pilihan)){
                 switch (pilihan){
                     case "1" :
                         AntarRekening.menuAntarRekening();

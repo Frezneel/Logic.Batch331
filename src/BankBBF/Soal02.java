@@ -2,10 +2,11 @@ package BankBBF;
 
 import java.util.Scanner;
 
-public class Dua {
+public class Soal02 {
     private static Scanner input = new Scanner(System.in);
     //Memberi kondisi pertama kali pada flag = true;
     private static boolean flag = true;
+    private static String pin ;
 
     public static void cekPIN (){
         System.out.println("=================================");
@@ -26,12 +27,12 @@ public class Dua {
             System.out.print("Masukkan PIN Anda : ");
             String PIN = input.nextLine();
             //Jika benar maka looping akan berhenti dan bernilai true/benar
-            if (PIN.equals(Satu.getPIN())) {
+            if (PIN.equals(Soal01.getPIN())) {
                 flag = false;
-                Tiga.menu();
+                Soal03.menu();
             }
             // Jika salah maka countSalah akan bertambah 1 sampai bernilai 3
-            if (!PIN.equals(Satu.getPIN())){
+            if (!PIN.equals(Soal01.getPIN())){
                 System.out.println("Password Salah.. Kesempatan(" + (2-countSalah) + ")");
                 countSalah++;}
         }

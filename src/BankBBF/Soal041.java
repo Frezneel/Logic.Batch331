@@ -2,7 +2,7 @@ package BankBBF;
 
 import java.util.Scanner;
 
-public class EmpatSatu {
+public class Soal041 {
     private static Scanner input = new Scanner(System.in);
     private static String tunai;
     private static boolean flag = true;
@@ -18,7 +18,7 @@ public class EmpatSatu {
             System.out.println("Masukkan Uang yang ingin disetor");
             System.out.print("Rp. ");
             tunai = input.nextLine();
-            if(Validation.isNumeric(tunai)){
+            if(Utility.isNumeric(tunai)){
                 int tunaiSetor = Integer.parseInt(tunai);
                 if(tunaiSetor <= limit){
                     System.out.println("Apakah anda yakin? y/n");
@@ -31,7 +31,7 @@ public class EmpatSatu {
                         String jawaban = input.nextLine();
                         if (jawaban.equals("y")){
                             flag = false;
-                            Dua.cekPIN();
+                            Soal02.cekPIN();
                         }else {
                             flag = false;
                             break;
@@ -52,6 +52,6 @@ public class EmpatSatu {
     }
 
     public static void setSaldo(int saldo) {
-        EmpatSatu.saldo = saldo;
+        Soal041.saldo = saldo;
     }
 }

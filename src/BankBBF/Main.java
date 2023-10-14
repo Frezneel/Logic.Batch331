@@ -1,7 +1,5 @@
 package BankBBF;
 
-import java.util.Scanner;
-
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -10,9 +8,9 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.println("Selamat datang di Bank BBF");
         System.out.println("Terimakasih telah mendaftar di Bank Kami");
-        Satu.buatPIN();
+        Soal01.buatPIN();
         System.out.println("PIN Baru Anda Berhasil diDaftarkan");
-        Dua.cekPIN();
+        Soal02.cekPIN();
 
     }
 }

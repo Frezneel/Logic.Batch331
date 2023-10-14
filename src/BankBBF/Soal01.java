@@ -2,7 +2,7 @@ package BankBBF;
 
 import java.util.Scanner;
 
-public class Satu {
+public class Soal01 {
     // Pin jumlah 6 angka (Tidak kurang tidak lebih)
     // PIN tidak boleh character selain numeric
 
@@ -23,7 +23,7 @@ public class Satu {
                 System.out.println("Angka terlalu banyak atau kurang dari '6'");
             } else {
                 // Pengecekan PIN apakah terdapat bukan angka.
-                while (Validation.isNumeric(PIN)){
+                while (Utility.isNumeric(PIN)){
                     // Jika tidak terdapat, memastikan lagi PIN yang dimasukkan apakah sama atau tidak
                     System.out.println("Untuk memastikan PIN sama, Masukkan PIN Lagi : ");
                     PIN2 = input.nextLine();
@@ -43,7 +43,7 @@ public class Satu {
     }
 
     public static void setPIN(String PIN) {
-        Satu.PIN = PIN;
+        Soal01.PIN = PIN;
     }
 
     public static boolean isSame (String PIN, String PIN2){
