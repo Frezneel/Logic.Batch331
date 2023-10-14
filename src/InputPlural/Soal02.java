@@ -21,7 +21,7 @@ public class Soal02 {
                 for (int i = 0; i < panjang; i++) {
                     jumlah += nilai[i];
                 }
-                int rata2 = jumlah / panjang;
+                double rata2 = (double) jumlah / panjang;
                 System.out.println("Rata-rata = "+ jumlah + " / " + panjang);
                 System.out.println("Nilai rata-rata = " + rata2);
                 flag = false;

@@ -33,10 +33,22 @@ public class Main {
                 Soal04.resolve();
                 break;
             case 5 :
-
+                Soal05.resolve();
                 break;
             case 6 :
-
+                Soal06.resolve();
+                break;
+            case 7 :
+                Soal07.resolve();
+                break;
+            case 8 :
+                Soal08.resolve();
+                break;
+            case 9 :
+                Soal09.resolve();
+                break;
+            case 10 :
+                Soal10.resolve();
                 break;
             default:
 
