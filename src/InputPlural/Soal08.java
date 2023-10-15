@@ -30,6 +30,7 @@ public class Soal08 {
 
         System.out.print("Angka terbesar keluar sebanyak = " + banyakTerbesar);
 
+        Utility.mauLagi();
     }
 
 }

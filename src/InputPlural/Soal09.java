@@ -38,5 +38,6 @@ public class Soal09 {
         System.out.println("Negative = " + df.format(negative) + " %");
         System.out.println("Zero = " + df.format(zero) + " %");
 
+        Utility.mauLagi();
     }
 }

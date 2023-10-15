@@ -48,5 +48,6 @@ public class Soal07 {
         System.out.println();
         System.out.print("Nilai Terkecil = " + nilaiTerkecil);
 
+        Utility.mauLagi();
     }
 }

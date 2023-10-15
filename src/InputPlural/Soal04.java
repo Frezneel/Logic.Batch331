@@ -77,5 +77,6 @@ public class Soal04 {
                 flag = false;
             }
         }
+        Utility.mauLagi();
     }
 }

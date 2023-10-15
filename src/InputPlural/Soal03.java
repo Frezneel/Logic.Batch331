@@ -31,6 +31,6 @@ public class Soal03 {
                 flag = false;
             }
         }
-
+        Utility.mauLagi();
     }
 }

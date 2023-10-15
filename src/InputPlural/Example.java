@@ -24,6 +24,6 @@ public class Example {
                 System.out.print(intArray[i] + " ");
             }
         }
-
+        Utility.mauLagi();
     }
 }

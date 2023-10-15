@@ -54,5 +54,6 @@ public class Soal06 {
 
         System.out.println("Banyaknya pasangan pada bilangan angka tersebut = " + output);
 
+        Utility.mauLagi();
     }
 }

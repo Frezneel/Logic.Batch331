@@ -29,6 +29,7 @@ public class Soal05 {
             urut[i] = counter;
             counter = 0;
         }
+        System.out.print("Output = ");
         for (int i = 0; i < panjang; i++) {
             for (int j = 0; j < panjang; j++) {
                 if (i == urut[j]){
@@ -36,6 +37,8 @@ public class Soal05 {
                 }
             }
         }
+
+        Utility.mauLagi();
 
     }
 }

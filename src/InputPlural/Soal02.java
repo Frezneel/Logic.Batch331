@@ -27,6 +27,6 @@ public class Soal02 {
                 flag = false;
             }
         }
-
+        Utility.mauLagi();
     }
 }

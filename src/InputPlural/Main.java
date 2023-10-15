@@ -6,6 +6,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        menu();
+    }
+
+    public static void menu(){
         Scanner input = new Scanner(System.in);
         System.out.println("===== MENU =====");
         System.out.println("Masukkan nomor soal dari 1 - 12");
@@ -49,6 +53,12 @@ public class Main {
                 break;
             case 10 :
                 Soal10.resolve();
+                break;
+            case 11 :
+                Soal11.resolve();
+                break;
+            case 12 :
+                Soal12.resolve();
                 break;
             default:
 

@@ -31,6 +31,6 @@ public class Soal10 {
         }
 
         System.out.println("Output = " + prima + "Adalah bilangan prima");
-
+        Utility.mauLagi();
     }
 }

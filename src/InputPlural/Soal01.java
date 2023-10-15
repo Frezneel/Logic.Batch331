@@ -25,6 +25,6 @@ public class Soal01 {
                 flag = false;
             }
         }
-
+        Utility.mauLagi();
     }
 }
